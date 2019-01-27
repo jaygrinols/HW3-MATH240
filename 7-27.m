@@ -7,5 +7,8 @@ colorbar
 pause
 
 %b) fminsearch
-
+fnew = @(x) f(x(1), x(2));
+[x,z] = fminsearch(fnew, [0,0])
 %c) substitute b) into a)
+fnew(x)
+
