@@ -8,4 +8,7 @@ Dnew = @(V) D(0.6, 16000, V);
 wrange = linspace(12000, 20000, 1000);
 Dnewb = @(W) D(0.6, W, voptimal)
 plot(wrange, Dnewb(wrange))
+xlabel('W (kg)')
+ylabel('Drag (N)')
+title('Drag vs. W')
 pause
